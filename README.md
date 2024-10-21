@@ -1,6 +1,6 @@
 # Employee Wellness Prediction App
 
-![Employee Wellness Prediction App]()  <!-- Optional: Add an image to represent your project -->
+![Employee Wellness Prediction App](https://github.com/ashishpal009/Employee-Wellness-Predictor-A-Flask-Based-Solution/blob/main/Screenshot%202024-10-16%20201208.png)  <!-- Optional: Add an image to represent your project -->
 
 ## Overview
 
