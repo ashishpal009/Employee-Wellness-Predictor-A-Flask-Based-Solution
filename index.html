@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h1>Employee Wellness Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="gender">Gender (0 for Male, 1 for Female):</label>
+        <input type="number" id="gender" name="gender" required><br><br>
+
+        <label for="self_employed">Self Employed (0 for No, 1 for Yes):</label>
+        <input type="number" id="self_employed" name="self_employed" required><br><br>
+
+        <label for="family_history">Family History (0 for No, 1 for Yes):</label>
+        <input type="number" id="family_history" name="family_history" required><br><br>
+
+        <label for="work_interfere">Work Interfere (0-3):</label>
+        <input type="number" id="work_interfere" name="work_interfere" required><br><br>
+
+        <label for="no_employees">No. of Employees:</label>
+        <input type="number" id="no_employees" name="no_employees" required><br><br>
+
+        <label for="remote_work">Remote Work (0 for No, 1 for Yes):</label>
+        <input type="number" id="remote_work" name="remote_work" required><br><br>
+
+        <label for="tech_company">Tech Company (0 for No, 1 for Yes):</label>
+        <input type="number" id="tech_company" name="tech_company" required><br><br>
+
+        <label for="benefits">Benefits (0 for No, 1 for Yes):</label>
+        <input type="number" id="benefits" name="benefits" required><br><br>
+
+        <label for="care_options">Care Options (0 for No, 1 for Yes):</label>
+        <input type="number" id="care_options" name="care_options" required><br><br>
+
+        <label for="wellness_program">Wellness Program (0 for No, 1 for Yes):</label>
+        <input type="number" id="wellness_program" name="wellness_program" required><br><br>
+
+        <label for="seek_help">Seek Help (0 for No, 1 for Yes):</label>
+        <input type="number" id="seek_help" name="seek_help" required><br><br>
+
+        <label for="anonymity">Anonymity (0 for No, 1 for Yes):</label>
+        <input type="number" id="anonymity" name="anonymity" required><br><br>
+
+        <label for="leave">Leave (0 for No, 1 for Yes):</label>
+        <input type="number" id="leave" name="leave" required><br><br>
+
+        <label for="mental_health_consequence">Mental Health Consequence (0 for No, 1 for Yes):</label>
+        <input type="number" id="mental_health_consequence" name="mental_health_consequence" required><br><br>
+
+        <label for="phys_health_consequence">Physical Health Consequence (0 for No, 1 for Yes):</label>
+        <input type="number" id="phys_health_consequence" name="phys_health_consequence" required><br><br>
+
+        <label for="coworkers">Coworkers (0 for No, 1 for Yes):</label>
+        <input type="number" id="coworkers" name="coworkers" required><br><br>
+
+        <label for="supervisor">Supervisor (0 for No, 1 for Yes):</label>
+        <input type="number" id="supervisor" name="supervisor" required><br><br>
+
+        <label for="mental_health_interview">Mental Health Interview (0 for No, 1 for Yes):</label>
+        <input type="number" id="mental_health_interview" name="mental_health_interview" required><br><br>
+
+        <label for="phys_health_interview">Physical Health Interview (0 for No, 1 for Yes):</label>
+        <input type="number" id="phys_health_interview" name="phys_health_interview" required><br><br>
+
+        <label for="mental_vs_physical">Mental vs Physical (0 for No, 1 for Yes):</label>
+        <input type="number" id="mental_vs_physical" name="mental_vs_physical" required><br><br>
+
+        <label for="obs_consequence">Observation Consequence (0 for No, 1 for Yes):</label>
+        <input type="number" id="obs_consequence" name="obs_consequence" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <!-- Display the result -->
+    {% if prediction_text %}
+    <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
