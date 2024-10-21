@@ -46,6 +46,10 @@ This project follows a systematic data science methodology:
 6. **Model Evaluation**: Evaluating the model's performance using metrics like accuracy, precision, recall, and F1 score.
 7. **Deployment**: Deploying the trained model within a Flask web application for real-time predictions.
 
+## Model Explanation
+
+In this Employee Wellness Prediction application, we utilize the Logistic Regression model to predict the likelihood of employees facing mental health challenges based on various features. Logistic regression is a statistical method used for binary classification problems, making it well-suited for our task of predicting a binary outcome (Yes or No).
+
 ## Installation
 
 To run this project locally, follow these steps:
